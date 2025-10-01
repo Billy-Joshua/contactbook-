@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Book</title>
+        <link rel="stylesheet" href="main.css"> 
+        <!-- font awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- form mode -->
+        <div id ="fullscreen-div"></div>
+        <form class="model" id ="model">
+            <div class ="model-content">
+                <div class="model-head">
+                    <h3 id="form-title">Add address</h3>
+                    <button class ="button" id ="close-btn">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    </div>
+                    <div class ="model-main">
+                        <div class = "model-row>
+                            <div class="model-col">
+                                <label for ="">how should your mail be adressed?</label>
+                                <input type="text" id="name" placeholder="E. g. John Doe" class = "form-control" name ="addr-ing-name">
+                            </div>
+                    </div>
+                         <div class = "model-row grid-row>
+                            <div class="model-col">
+                                <label for ="">last name</label>
+                                <input type="text" placeholder="the last-name" class = "form-control" name ="last-name">
+
+                            </div>
+                              <div class="model-col">
+                                <label for ="">last name</label>
+                                <input type="text" placeholder="the last-name" class = "form-control" name ="last-name">
+                                
+                            </div>
+                        </div>
+                         <div class = "model-row grid-row>
+                            <div class="model-col">
+                                <label for ="">Email</label>
+                                <input type="email" placeholder="the email" class = "form-control" name ="email">
+
+                            </div>
+                              <div class="model-col">
+                                <label for ="">phone</label>
+                                <input type="text" placeholder="the phone" class = "form-control" name ="phone">
+                                
+                            </div>
+                        </div>
+                         <div class = "model-row grid-row>
+                            <div class="model-col">
+                                <label for ="">street address</label>
+                                <input type="text" placeholder="the street address,apartment,house number, etc." class = "form-control" name ="street-addr">
+
+                            </div>
+                              <div class="model-col">
+                                <label for ="">post code</label>
+                                <input type="text" placeholder="60323" class = "form-control" name ="post-code">
+                                
+                            </div>
+                        </div>
+                         <div class = "model-row grid-row>
+                            <div class="model-col">
+                                <label for ="">city</label>
+                                <input type="text" placeholder="city name" class = "form-control" name ="city">
+
+                            </div>
+                              <div class="model-col">
+                                <label for ="">country</label>
+                               <select id="country-list" name ="country">
+                                <option value="USA">USA</option>
+                               </select>
+                                
+                            </div>
+                        </div>
+                        <div class ="model-row">
+                            <div class ="model-col">
+                                <label for ="">labels</label>
+                                <select name ="labels">
+                                    <option value="family">family</option>
+                                    <option value="friend">friend</option>
+                                    <option value="colleague">colleague</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="model-row" id ="model-btns">
+                            <button type="submit" class ="button" id ="save-btn">Save</button>
+                        </div>
+                    </div>
+                    
+                </div>
+        </form> 
+        <script src="contactBook.js"></script> 
+    </body>
+</html>
